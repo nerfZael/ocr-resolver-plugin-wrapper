@@ -1,0 +1,36 @@
+{
+  "name": "@nerfzael/ocr-resolver-plugin-wrapper",
+  "description": "Polywrap OCR URI resolver plugin wrapper",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nerfZael/ocr-resolver-plugin-wrapper.git"
+  },
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "rimraf ./build && yarn codegen && tsc --project tsconfig.build.json",
+    "codegen": "npx polywrap plugin codegen",
+    "lint": "eslint --color -c ../../../../.eslintrc.js src/",
+    "test": "jest --passWithNoTests --runInBand --verbose",
+    "test:ci": "jest --passWithNoTests --runInBand --verbose",
+    "test:watch": "jest --watch --passWithNoTests --verbose"
+  },
+  "dependencies": {
+    "@nerfzael/encoding": "0.1.1",
+    "@nerfzael/ocr-core": "0.1.0",
+    "@polywrap/core-js": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/prettier": "2.6.0",
+    "jest": "28.1.2",
+    "polywrap": "0.1.0",
+    "rimraf": "3.0.2",
+    "ts-jest": "26.5.4",
+    "ts-node": "8.10.2",
+    "typescript": "4.0.7"
+  }
+}

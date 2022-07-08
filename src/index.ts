@@ -135,7 +135,7 @@ export class OcrResolverPlugin extends Module<OcrResolverPluginConfig> {
 }
 
 export const ocrResolverPlugin: PluginFactory<OcrResolverPluginConfig> = (
-  config: OcrResolverPluginConfig
+  config?: OcrResolverPluginConfig
 ) => {
   return {
     factory: () => new OcrResolverPlugin(config),

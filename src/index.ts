@@ -29,8 +29,8 @@ export interface OcrResolverPluginConfig {
 export class OcrResolverPlugin extends Module<OcrResolverPluginConfig> {
   public static defaultAddress = constants.networks.polygon.address;
 
-  constructor(config: OcrResolverPluginConfig) {
-    super(config);
+  constructor(config?: OcrResolverPluginConfig) {
+    super(config ?? {});
 
     if (this.config.addresses) {
       this._setAddresses(this.config.addresses);

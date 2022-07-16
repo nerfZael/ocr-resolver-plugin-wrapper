@@ -5,7 +5,7 @@ import { OcrId } from "@nerfzael/ocr-core";
 import { InMemoryFile } from "@nerfzael/encoding";
 import { BYTES_FOR_FILE_PATH, BYTES_FOR_FILE_SIZE } from "../constants";
 
-export const fetchPackageFiles = async (
+export const getFilesByOcrId = async (
   ocrId: OcrId,
   provider: ethers.providers.Provider
 ): Promise<InMemoryFile[]> => {

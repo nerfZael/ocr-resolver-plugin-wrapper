@@ -12,7 +12,7 @@ import { PluginFactory } from "@polywrap/core-js";
 import { constants, DEFAULT_OCR_NETWORK_PROVIDER, WRAP_MANIFEST_FILE_NAME } from "./constants";
 import { ethers } from "ethers";
 import { OcrId, decodeOcrIdFromContenthash } from "@nerfzael/ocr-core";
-import { deserializeOcrPath, getFilesFromOcrId, getFileFromPath } from "./utils";
+import { deserializeOcrPath, getFilesByOcrId, getFileFromPath } from "./utils";
 import { InMemoryFile } from "@nerfzael/encoding";
 
 export type Address = string;
@@ -66,7 +66,7 @@ export class OcrResolverPlugin extends Module<OcrResolverPluginConfig> {
     try {
       const provider = this.config.provider ?? ethers.getDefaultProvider(DEFAULT_OCR_NETWORK_PROVIDER);
 
-      const files = await getFilesFromOcrId(ocrId, provider);
+      const files = await getFilesByOcrId(ocrId, provider);
       
       if(!files || !files.length) { 
         return { uri: null, manifest: null };

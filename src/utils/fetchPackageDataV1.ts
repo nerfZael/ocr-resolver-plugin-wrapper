@@ -6,7 +6,7 @@ export const fetchPackageDataV1 = async (
   ocrId: OcrId,
   provider: ethers.providers.Provider
 ): Promise<Uint8Array> => {
-  const contract = OcrContract.create(ocrId.contractAddress, provider);
+  const contract = OcrContract.create(ocrId.protocolVersion, ocrId.contractAddress, provider);
   
   const events = await contract.queryFilter(
     contract.filters.PackagePart(ocrId.packageIndex),

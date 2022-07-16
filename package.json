@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@nerfzael/encoding": "0.2.4",
-    "@nerfzael/ocr-core": "0.2.0",
+    "@nerfzael/ocr-core": "0.2.1",
     "@polywrap/core-js": "0.2.0"
   },
   "devDependencies": {

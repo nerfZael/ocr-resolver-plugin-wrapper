@@ -1054,10 +1054,10 @@
     ethers "5.6.9"
     typescript "4.4.2"
 
-"@nerfzael/ocr-core@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@nerfzael/ocr-core/-/ocr-core-0.2.0.tgz#199539b18b6d78c6edc7f1a7de88d8f52f94bfed"
-  integrity sha512-hGnrEZ8XRqrqRRY7Z3iVjGo3ttmH2RdE98qI4IEU9goyQ8kus+JCWRsN06IjGJRuBILVrNm4/JCPEjKmuiLDxA==
+"@nerfzael/ocr-core@0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@nerfzael/ocr-core/-/ocr-core-0.2.1.tgz#a43ad1f13de7d9ca7fbfddd98273b8e4ddf3ee5c"
+  integrity sha512-0T5D84HiJkunNJ3zOEvz4UIWczQBDS02Q4s1+FeZwv6pi6NZflLayphBvG4ef+JjxbkUTBDOlaAfTrs2/Pwsfg==
   dependencies:
     "@nerfzael/encoding" "0.2.4"
     ethers "5.6.9"

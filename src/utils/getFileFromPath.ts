@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 import { OcrId } from "@nerfzael/ocr-core";
-import { InMemoryFile } from "@nerfzael/encoding";
+import { InMemoryFile } from "@nerfzael/memory-fs";
 import { getFilesByOcrId } from "./getFilesByOcrId";
 
 export const getFileFromPath = async (ocrId: OcrId, path: string, provider: ethers.providers.Provider): Promise<InMemoryFile | undefined> => {

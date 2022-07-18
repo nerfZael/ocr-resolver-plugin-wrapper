@@ -1046,20 +1046,36 @@
   resolved "https://registry.yarnpkg.com/@multiformats/base-x/-/base-x-4.0.1.tgz#95ff0fa58711789d53aefb2590a8b7a4e715d121"
   integrity sha512-eMk0b9ReBbV23xXU693TAIrLyeO5iTgBZGSJfpqriG8UkYvr/hC9u9pyMlAakDNHWmbhMZCDs6KQO0jzKD8OTw==
 
-"@nerfzael/encoding@0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@nerfzael/encoding/-/encoding-0.2.4.tgz#31415dbb553a17914ff1562f7dea837c53d0f1d7"
-  integrity sha512-pzpDNpafJ1mBeNimlBvwdoQq0Xe06YI87ecBkDfkZRfKjgHjMB1TPZVPS3TPlRSFiDxj74z+V+Te674Net+3EQ==
+"@nerfzael/encoding@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@nerfzael/encoding/-/encoding-0.2.5.tgz#ca120f9ee8d411297238122a425cfb6072ba7e43"
+  integrity sha512-uDLkOSONp+v6y8MQde+6xWfQsa0sVA6weSp8aX7V85SG1bD1VDdA+a+13T/YAgfEhq9VjJ8iwNcIT/uVKj9I0g==
   dependencies:
     ethers "5.6.9"
     typescript "4.4.2"
 
-"@nerfzael/ocr-core@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@nerfzael/ocr-core/-/ocr-core-0.2.1.tgz#a43ad1f13de7d9ca7fbfddd98273b8e4ddf3ee5c"
-  integrity sha512-0T5D84HiJkunNJ3zOEvz4UIWczQBDS02Q4s1+FeZwv6pi6NZflLayphBvG4ef+JjxbkUTBDOlaAfTrs2/Pwsfg==
+"@nerfzael/encoding@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@nerfzael/encoding/-/encoding-0.3.0.tgz#137cd8315a3352ca16226349965fbc8f3c613c00"
+  integrity sha512-i4N2R+zLcsYkWGGFBYxxAxZEU0QLLzlgud03C3LFsJZdAlYyAb8PD9ZSbfcu8vb1zuL55F8R0Qsl9qc3cZczBg==
   dependencies:
-    "@nerfzael/encoding" "0.2.4"
+    "@nerfzael/memory-fs" "0.1.1"
+    ethers "5.6.9"
+    typescript "4.4.2"
+
+"@nerfzael/memory-fs@0.1.1", "@nerfzael/memory-fs@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@nerfzael/memory-fs/-/memory-fs-0.1.1.tgz#b3be46bc8bb9a0e9a56db7c1e2391c08b41aa9de"
+  integrity sha512-bP7WKML1nmSEUWkOlw31JH1DMuaF5Ez//W8yZTx8JB8/64+SSE6QNBLiqt/wEp1OycoXiuBHoiXFMvsRdER2iQ==
+  dependencies:
+    typescript "4.4.2"
+
+"@nerfzael/ocr-core@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@nerfzael/ocr-core/-/ocr-core-0.3.0.tgz#bb6d12c5898a490fb5e5d3f3cb0df6518bd9f088"
+  integrity sha512-7PBgzJ4NtrZW5fFOt815w6LP0pzuTR1eQ5+xhw7A1cTTJl9lsGvScPLzi+t6EHLmSc1FWKMMXNRYgTVLJf9qdA==
+  dependencies:
+    "@nerfzael/encoding" "0.2.5"
     ethers "5.6.9"
     typescript "4.4.2"
 

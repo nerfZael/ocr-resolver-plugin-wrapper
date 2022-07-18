@@ -13,7 +13,7 @@ import { constants, DEFAULT_OCR_NETWORK_PROVIDER, WRAP_MANIFEST_FILE_NAME } from
 import { ethers } from "ethers";
 import { OcrId, decodeOcrIdFromContenthash } from "@nerfzael/ocr-core";
 import { deserializeOcrPath, getFilesByOcrId, getFileFromPath } from "./utils";
-import { InMemoryFile } from "@nerfzael/encoding";
+import { InMemoryFile } from "@nerfzael/memory-fs";
 
 export type Address = string;
 

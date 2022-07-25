@@ -1,7 +1,7 @@
 {
   "name": "@nerfzael/ocr-resolver-plugin-wrapper",
   "description": "Polywrap OCR URI resolver plugin wrapper",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -22,8 +22,8 @@
   "dependencies": {
     "@nerfzael/encoding": "0.3.0",
     "@nerfzael/memory-fs": "0.1.1",
-    "@nerfzael/ocr-core": "0.3.0",
-    "@polywrap/core-js": "0.2.0"
+    "@nerfzael/ocr-core": "0.4.0",
+    "@polywrap/core-js": "0.1.0"
   },
   "devDependencies": {
     "@types/prettier": "2.6.0",
